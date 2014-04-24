@@ -22,16 +22,16 @@ import org.jfree.ui.RectangleInsets;
 import java.awt.BasicStroke;
 
 public class GraficoPerformance extends ApplicationFrame {
-    private static JFreeChart jfreechart;   
-    public GraficoPerformance(final String title, XYSeries series1) 
+    private static JFreeChart jfreechart;
+    public GraficoPerformance(final String title, XYSeries series1)
     {
         super(title);
         XYSeriesCollection dataset = new XYSeriesCollection();
-        dataset.addSeries(series1);  
+        dataset.addSeries(series1);
 
         this.jfreechart = ChartFactory.createScatterPlot(title, "", "Performance", dataset, PlotOrientation.VERTICAL, true, true, false);
         this.jfreechart.getLegend().setItemFont(new Font("Dialog", Font.BOLD, 12));
-                
+
         XYPlot plot = (XYPlot) jfreechart.getPlot();
         plot.setBackgroundPaint(Color.lightGray);
         plot.setAxisOffset(new RectangleInsets(5.0, 5.0, 5.0, 5.0));
@@ -48,23 +48,23 @@ public class GraficoPerformance extends ApplicationFrame {
 
         NumberAxis rangeAxis = (NumberAxis) plot.getRangeAxis();
         NumberAxis domainAxis = (NumberAxis) plot.getDomainAxis();
-        rangeAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());        
-        //Alterar fonte               
+        rangeAxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
+        //Alterar fonte
         rangeAxis.setTickLabelFont(new Font("Arial", Font.BOLD, 12));
-        rangeAxis.setLabelFont(new Font("SansSerif", Font.BOLD, 14));                        
+        rangeAxis.setLabelFont(new Font("SansSerif", Font.BOLD, 14));
         domainAxis.setTickLabelFont(new Font("SansSerif", Font.BOLD, 12));
-        domainAxis.setLabelFont(new Font("SansSerif", Font.PLAIN, 14));        
-        
-       
+        domainAxis.setLabelFont(new Font("SansSerif", Font.PLAIN, 14));
+
+
         final ChartPanel panel = new ChartPanel(this.jfreechart, true);
         panel.setPreferredSize(new java.awt.Dimension(620,410));
         panel.setMinimumDrawHeight(3);
         panel.setMaximumDrawHeight(2000);
         panel.setMinimumDrawWidth(3);
-        panel.setMaximumDrawWidth(2000); 
+        panel.setMaximumDrawWidth(2000);
         setContentPane(panel);
-        
-        
+
+
     }
     //****************************************************************************
     public static void gerar(String titulo, String filename, XYSeries series1) {
@@ -77,28 +77,11 @@ public class GraficoPerformance extends ApplicationFrame {
             ChartUtilities.saveChartAsJPEG(f, jfreechart, 620,410);
         }
         catch (IOException e){
-            System.out.println("Erro ao salvar o gráfico: "+e.toString());     
-        }        
+            System.out.println("Erro ao salvar o gráfico: "+e.toString());
+        }
         catch (Exception es){
             System.out.println("Erro ao salvar o gráfico. "+es.toString());
-        }        
+        }
 
     }
 }
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

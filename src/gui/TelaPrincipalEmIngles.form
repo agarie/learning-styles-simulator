@@ -22,278 +22,278 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+        <Group type="102" alignment="0" attributes="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                    <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="lim" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="m" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="k" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="tam" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="markov" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="ag" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="MEreflexivo" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="MEintuitivo" min="-2" pref="40" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="MEativo" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                      <Component id="MEsensitivo" min="-2" pref="40" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="MEverbal" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="MEvisual" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="MEglobal" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
-                                  <Component id="MEsequencial" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jSeparator2" alignment="0" pref="725" max="32767" attributes="0"/>
-                              <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
-                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel9" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
-                                  <Component id="EAr_ativo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="EAr_reflexivo" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
-                                  <Component id="forca1" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel17" min="-2" pref="96" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="EAr_sensitivo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="EAr_intuitivo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="forca2" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jLabel18" alignment="0" pref="89" max="32767" attributes="0"/>
-                                  <Component id="EAr_visual" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="EAr_verbal" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="forca3" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel19" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
-                                  <Component id="EAr_global" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="EAr_sequencial" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="forca4" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                        <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                        <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                        <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                    </Group>
+                    <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                    </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="portugues" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="ingles" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="arquivo" min="-2" pref="193" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="jSeparator3" alignment="0" min="-2" pref="725" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                    <Component id="lim" alignment="0" max="32767" attributes="0"/>
+                    <Component id="m" alignment="0" max="32767" attributes="0"/>
+                    <Component id="k" alignment="0" max="32767" attributes="0"/>
+                    <Component id="tam" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="markov" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="ag" min="-2" max="-2" attributes="0"/>
+                </Group>
+                <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                    <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                    <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                    <Group type="102" alignment="0" attributes="0">
+                      <Component id="MEreflexivo" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="MEintuitivo" min="-2" pref="40" max="-2" attributes="0"/>
+                    </Group>
+                    <Group type="102" alignment="0" attributes="0">
+                      <Component id="MEativo" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="MEsensitivo" min="-2" pref="40" max="-2" attributes="0"/>
+                    </Group>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                    <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                    <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                    <Group type="102" alignment="0" attributes="0">
+                      <Component id="MEverbal" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                    </Group>
+                    <Group type="102" alignment="0" attributes="0">
+                      <Component id="MEvisual" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                    </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                    <Component id="MEglobal" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                    <Component id="MEsequencial" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                  </Group>
+                </Group>
+                <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jSeparator2" alignment="0" pref="725" max="32767" attributes="0"/>
+                  <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                    <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                    <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                </Group>
+                <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                    <Component id="jLabel9" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+                    <Component id="EAr_ativo" alignment="0" min="-2" max="-2" attributes="0"/>
+                    <Component id="EAr_reflexivo" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
+                    <Component id="forca1" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                    <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel17" min="-2" pref="96" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                    </Group>
+                    <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                        <Component id="EAr_sensitivo" alignment="0" min="-2" max="-2" attributes="0"/>
+                        <Component id="EAr_intuitivo" alignment="0" min="-2" max="-2" attributes="0"/>
+                        <Component id="forca2" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                    </Group>
                   </Group>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                    <Component id="jLabel18" alignment="0" pref="89" max="32767" attributes="0"/>
+                    <Component id="EAr_visual" alignment="0" min="-2" max="-2" attributes="0"/>
+                    <Component id="EAr_verbal" alignment="0" min="-2" max="-2" attributes="0"/>
+                    <Component id="forca3" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                    <Component id="jLabel19" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+                    <Component id="EAr_global" alignment="0" min="-2" max="-2" attributes="0"/>
+                    <Component id="EAr_sequencial" alignment="0" min="-2" max="-2" attributes="0"/>
+                    <Component id="forca4" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                  </Group>
+                </Group>
               </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+            </Group>
+            <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                <Group type="102" alignment="0" attributes="0">
+                  <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="portugues" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="ingles" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                  <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="arquivo" min="-2" pref="193" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                </Group>
+                <Component id="jSeparator3" alignment="0" min="-2" pref="725" max="-2" attributes="0"/>
+              </Group>
+            </Group>
           </Group>
+          <EmptySpace max="-2" attributes="0"/>
+        </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                      <Component id="k" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="m" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lim" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="tam" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="markov" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ag" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="EAr_ativo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="EAr_sensitivo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="EAr_visual" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="EAr_sequencial" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="EAr_reflexivo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="EAr_intuitivo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="EAr_verbal" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="EAr_global" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="forca1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="forca2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="forca3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="forca4" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="14" max="32767" attributes="0"/>
-              <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="MEativo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="MEsensitivo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="MEvisual" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="MEsequencial" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="MEreflexivo" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="MEintuitivo" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="MEverbal" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="MEglobal" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="arquivo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ingles" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="portugues" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
+        <Group type="102" alignment="0" attributes="0">
+          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="1" attributes="0">
+            <Group type="102" alignment="1" attributes="0">
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+            </Group>
+            <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+              <Component id="k" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+            </Group>
           </Group>
+          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="m" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="lim" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="tam" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="markov" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="ag" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+          <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+          <EmptySpace max="-2" attributes="0"/>
+          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+          <EmptySpace max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="EAr_ativo" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="EAr_sensitivo" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="EAr_visual" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="EAr_sequencial" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="EAr_reflexivo" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="EAr_intuitivo" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="EAr_verbal" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="EAr_global" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="forca1" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="forca2" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="forca3" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="forca4" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="14" max="32767" attributes="0"/>
+          <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+          <EmptySpace max="-2" attributes="0"/>
+          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+          <EmptySpace type="separate" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="MEativo" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="MEsensitivo" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="MEvisual" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="MEsequencial" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="MEreflexivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MEintuitivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MEverbal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MEglobal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                </Group>
+                <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                <EmptySpace type="separate" max="-2" attributes="0"/>
+              </Group>
+            </Group>
+            <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+            </Group>
+          </Group>
+          <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="arquivo" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="ingles" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="portugues" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace max="-2" attributes="0"/>
+        </Group>
       </Group>
     </DimensionLayout>
   </Layout>

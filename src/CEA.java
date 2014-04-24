@@ -31,7 +31,7 @@ public class CEA {
         this.ceaSt[3] = s4;
     }
 
-   public char[] getSt(){
+    public char[] getSt(){
         return this.ceaSt;
     }
 

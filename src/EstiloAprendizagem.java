@@ -1,16 +1,16 @@
 public class EstiloAprendizagem
 {
-  private double[][] d = new double[4][2]; //posicao 0=ativo / 1=reflexivo
+    private double[][] d = new double[4][2]; //posicao 0=ativo / 1=reflexivo
 
- public double[][] get(){
-     return d;
- }
+    public double[][] get(){
+        return d;
+    }
 
- public void set(int e, double e0, double e1 ){
-     //l variando de 0 a 3
-     this.d[e][0] = e0;
-     this.d[e][1] = e1;
- }
+    public void set(int e, double e0, double e1 ){
+        //l variando de 0 a 3
+        this.d[e][0] = e0;
+        this.d[e][1] = e1;
+    }
 
     public void show(){
         System.out.println("Ativo: "+this.d[0][0]);

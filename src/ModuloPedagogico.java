@@ -28,10 +28,10 @@ public class ModuloPedagogico {
 
         for (int i = 0; i < 4; i++){
             if (i != z){
-               if (EA.get()[i][0] >= EA.get()[i][1])
-                   cea.get()[i] = 0;
-               else
-                   cea.get()[i] = 1;
+                if (EA.get()[i][0] >= EA.get()[i][1])
+                    cea.get()[i] = 0;
+                else
+                    cea.get()[i] = 1;
             }
             else {
                 x = Math.random();

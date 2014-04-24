@@ -19,10 +19,10 @@ public class ModuloPedagogicoAG
     //calcula fitness
     public static void calcFT(EstiloAprendizagem EA){
         for (int i=0; i <POPSIZE; i++){
-           ft[i] = 1;
-           for (int j = 0; j < 4 ; j++){
-               ft[i] = ft[i] * (EA.get()[j][lsc[i].get()[j]]);
-           }
+            ft[i] = 1;
+            for (int j = 0; j < 4 ; j++){
+                ft[i] = ft[i] * (EA.get()[j][lsc[i].get()[j]]);
+            }
         }
     }
     //calcula probabilidades de selecao
@@ -30,7 +30,7 @@ public class ModuloPedagogicoAG
     public static void calcPD(){
         double sf = sumFitness();
         for (int i=0; i <POPSIZE; i++)
-           pd[i] =  ft[i] / sf;
+            pd[i] =  ft[i] / sf;
 
     }
     //calcula probabilidades acumuladas para roleta
@@ -45,7 +45,7 @@ public class ModuloPedagogicoAG
         double r = Math.random();
         int i;
         for (i = 0; i < POPSIZE; i++){
-           if (r <= ac[i]) break;
+            if (r <= ac[i]) break;
         }
         return i;
     }
@@ -77,9 +77,9 @@ public class ModuloPedagogicoAG
             for (j = 0; j < 4; j++){
                 r = Math.random();
                 if (r < 0.5)
-                     crom = crom + "0";
+                    crom = crom + "0";
                 else
-                     crom = crom + "1";
+                    crom = crom + "1";
             }
             lsc[i] = new CEA(crom);
         }
@@ -117,8 +117,8 @@ public class ModuloPedagogicoAG
                 }
                 //fazer o crossover
                 for (int j=c; j<4; j++) {
-                     lscNEW[i].set(j, lsc[ind2].get()[j]);
-                     lscNEW[i+1].set(j, lsc[ind1].get()[j]);
+                    lscNEW[i].set(j, lsc[ind2].get()[j]);
+                    lscNEW[i+1].set(j, lsc[ind1].get()[j]);
                 }
             }
             else {
@@ -149,12 +149,12 @@ public class ModuloPedagogicoAG
 
         System.out.println("PD:");
         for (int i=0; i <POPSIZE; i++){
-           System.out.println(pd[i]);
+            System.out.println(pd[i]);
         }
 
         System.out.println("AC:");
         for (int i=0; i <POPSIZE; i++){
-           System.out.println(ac[i]);
+            System.out.println(ac[i]);
         }
 
         System.out.println("ROLETA:");
@@ -171,5 +171,5 @@ public class ModuloPedagogicoAG
             System.out.println(lsc[i].get()[0]+" "+lsc[i].get()[1]+" "+lsc[i].get()[2]+" "+lsc[i].get()[3]);
 
     }
-//=========================================================
+    //=========================================================
 }
