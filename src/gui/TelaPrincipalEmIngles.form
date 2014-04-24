@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="lim" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="m" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="k" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="tam" alignment="0" min="-2" pref="68" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="markov" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="ag" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="MEreflexivo" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="MEintuitivo" min="-2" pref="40" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="MEativo" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                      <Component id="MEsensitivo" min="-2" pref="40" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="MEverbal" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="MEvisual" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="MEglobal" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Component id="MEsequencial" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jSeparator2" alignment="0" pref="725" max="32767" attributes="0"/>
+                              <Component id="jSeparator1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel9" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+                                  <Component id="EAr_ativo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EAr_reflexivo" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="forca1" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel17" min="-2" pref="96" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="EAr_sensitivo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="EAr_intuitivo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="forca2" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jLabel18" alignment="0" pref="89" max="32767" attributes="0"/>
+                                  <Component id="EAr_visual" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EAr_verbal" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="forca3" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel19" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+                                  <Component id="EAr_global" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="EAr_sequencial" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="forca4" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="portugues" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="ingles" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="arquivo" min="-2" pref="193" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jSeparator3" alignment="0" min="-2" pref="725" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                      <Component id="k" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="m" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lim" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tam" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="markov" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ag" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="EAr_ativo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EAr_sensitivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EAr_visual" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EAr_sequencial" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="EAr_reflexivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EAr_intuitivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EAr_verbal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="EAr_global" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="forca1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="forca2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="forca3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="forca4" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
+              <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="MEativo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MEsensitivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MEvisual" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MEsequencial" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="MEreflexivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MEintuitivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MEverbal" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="MEglobal" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Component id="jSeparator3" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="arquivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ingles" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="portugues" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JComboBox" name="forca1">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Strong"/>
+            <StringItem index="1" value="Moderada"/>
+            <StringItem index="2" value="Leve"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="forca1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="forca2">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Strong"/>
+            <StringItem index="1" value="Moderada"/>
+            <StringItem index="2" value="Leve"/>
+          </StringArray>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tam">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="30"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Execute"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Active:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="forca3">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Strong"/>
+            <StringItem index="1" value="Moderada"/>
+            <StringItem index="2" value="Leve"/>
+          </StringArray>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="forca4">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Strong"/>
+            <StringItem index="1" value="Moderada"/>
+            <StringItem index="2" value="Leve"/>
+          </StringArray>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Visual:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Intuitive:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sensitive:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reflective:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="EAr_ativo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Active"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EAr_ativoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="EAr_reflexivo">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Reflective"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="EAr_sensitivo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sensitive"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EAr_sensitivoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="EAr_intuitivo">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Intuitive"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="EAr_visual">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Visual"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="EAr_verbal">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Verbal"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="EAr_sequencial">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sequential"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="EAr_global">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Global"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="11" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Parameters:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Rmax"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="k">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.8"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PFM threshold:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Learning Rate:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="m">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="60"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JTextField" name="lim">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="11" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Student&apos;s real LS:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="ag">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="AG"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="markov">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Markov"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator3">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel22">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Approach:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MEsequencial">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.70"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MEglobal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.30"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MEvisual">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.70"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MEverbal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.30"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MEsensitivo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.70"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MEintuitivo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.30"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MEativo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.70"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MEativoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="MEreflexivo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0.30"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Active-Reflective         "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Learning goals:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel19">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sequential-Global"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel18">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Visual-Verbal"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sequential:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Verbal:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel17">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sensitive-Intuitive"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Global:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="11" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Initial probabilistic LS "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="arquivo">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="arquivoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="portugues">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Portuguese"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="ingles">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="English"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel21">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Language:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel20">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save Experiment As"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
