@@ -1,1 +1,6 @@
+# Generated files.
+build/
+dist/
+
+# Some graphics are generated.
 *.jpg
