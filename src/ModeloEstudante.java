@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ModeloEstudante {
     // Alterado durante o processo de aprendizagem.
-    final private EstiloAprendizagem EA;
+    private EstiloAprendizagem EA;
     final private ArrayList<ObjetivoAprendizagem> OA = new ArrayList<ObjetivoAprendizagem>();
     final private ArrayList<EstadoCognitivo> EC = new ArrayList<EstadoCognitivo>();
 
