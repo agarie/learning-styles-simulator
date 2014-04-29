@@ -1,9 +1,0 @@
-TelaPrincipalEmIngles$1
-TelaPrincipalEmIngles$3
-TelaPrincipalEmIngles$2
-TelaPrincipalEmIngles$5
-TelaPrincipalEmIngles$4
-TelaPrincipalEmIngles$7
-TelaPrincipalEmIngles$6
-TelaPrincipalEmIngles$8
-TelaPrincipalEmIngles
