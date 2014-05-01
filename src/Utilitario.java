@@ -6,17 +6,4 @@ public class Utilitario
          int n = (int) (r * N);
          return n;
     }
-    public static void pause(int x){
-            try {
-               Thread.sleep(x);
-            } catch (InterruptedException e) {
-               e.printStackTrace();
-            }
-    }
-
-    public static void teste(){
-        System.out.println("------------------");
-        for (int i = 0; i < 10; i++)
-            System.out.println(Math.random());
-    }
 }
