@@ -7,9 +7,22 @@ public class ModeloEstudante {
     final private ArrayList<EstadoCognitivo> EC = new ArrayList<EstadoCognitivo>();
 
     final private double MAXDIFF = 0.9;
-    private int TAM = 60 ; // Quantidade de conceitos a serem aprendidos.
+    private int TAM = 60; // Quantidade de conceitos a serem aprendidos.
     private double K = 0.5; // Taxa de aprendizagem
     private double LIM = 0.05;
+
+    public ModeloEstudante(EstiloAprendizagem ea, int t, double k, double lim) {
+        this.EA = ea;
+        this.TAM = t;
+        this.K = k;
+
+        //d1; //0 = ativo, 1 = reflexivo.
+        //d2; //0 = sensitivo, 1 = intuitivo.
+        //d3; //0 = visual, 1 = verbal.
+        //d4; //0 = sequencial, 1 = global.
+        this.LIM = lim;
+
+    }
 
     public ObjetivoAprendizagem getOA(int i) {
         if (i < TAM) {
@@ -36,10 +49,6 @@ public class ModeloEstudante {
     public int getConceptNumber() {
         // Conceitos de 0 a N-1.
         return Utilitario.RandomInt(TAM);
-    }
-
-    public void setEA(EstiloAprendizagem ea) {
-        this.EA = ea;
     }
 
     public EstiloAprendizagem getEA() {
@@ -94,22 +103,6 @@ public class ModeloEstudante {
             resultado = false;
         }
         return resultado;
-    }
-
-    //d1; //0 = ativo, 1 = reflexivo.
-    //d2; //0 = sensitivo, 1 = intuitivo.
-    //d3; //0 = visual, 1 = verbal.
-    //d4; //0 = sequencial, 1 = global.
-    public void setLim(double lim) {
-        this.LIM = lim;
-    }
-
-    public void setTam(int tam) {
-        this.TAM = tam;
-    }
-
-    public void setK(double k) {
-        this.K = k;
     }
 
     public double calcF(double DLS, double PFM) {

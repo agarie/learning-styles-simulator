@@ -505,7 +505,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_MEativoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ModeloEstudante ME = new ModeloEstudante();
         EstiloAprendizagem EA = new EstiloAprendizagem();
         CEA cea_r = new CEA();
 
@@ -523,8 +522,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         EA.set(1, sensitivo, intuitivo); //(0)sensitivo-(1)intuitivo
         EA.set(2, visual, verbal); //(0)visual-(1)verbal
         EA.set(3, sequencial, global); //(0)sequencial-(1)global
-
-        ME.setEA(EA);
 
         //configurar CEA real do estudante
         String f1 = (String)forca1.getSelectedItem();
@@ -546,15 +543,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         cea_r.set(d1,d2,d3,d4);   //Experimento 1
 
+        ModeloEstudante ME = new ModeloEstudante(EA, Integer.parseInt(tam.getText()),
+                Double.parseDouble(k.getText()), Double.parseDouble(lim.getText()));
+
         //inicializar objetivos de aprendizagem do estudante
         ME.setOA();
 
         //inicializar estado cognitivo do estudante
         ME.setEC();
-
-        ME.setK(Double.parseDouble(k.getText()));
-        ME.setLim(Double.parseDouble(lim.getText()));
-        ME.setTam(Integer.parseInt(tam.getText()));
 
         byte idioma;
         if (portugues.isSelected()) idioma = 0;
