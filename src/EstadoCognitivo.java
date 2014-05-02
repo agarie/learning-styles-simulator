@@ -1,6 +1,6 @@
 public class EstadoCognitivo extends ObjetivoAprendizagem
 {
-    EstadoCognitivo(Conceito c, int nc){
+    EstadoCognitivo(Concept c, int nc){
         super(c,nc);
     }
 }

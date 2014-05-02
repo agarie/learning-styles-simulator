@@ -48,7 +48,7 @@ public class StudentModel {
     }
 
     public int getConceptNumber() {
-        // Conceitos de 0 a N-1.
+        // Concepts de 0 a N-1.
         return Utilitario.RandomInt(TAM);
     }
 
@@ -63,23 +63,23 @@ public class StudentModel {
 
     public void setOA() {
         int i;
-        Conceito c;
+        Concept c;
         int nc = 5;   //6 niveis cognitivos: de 0 a 5
         //Synthesis: Builds a structure or pattern from diverse elements.
         //Put parts together to form a whole, with emphasis on creating a new meaning
         //or structure.
         for (i=0; i < TAM; i++) {
-            c = new Conceito(i, "Conceito"+i);
+            c = new Concept(i, "Concept"+i);
             OA.add(new ObjetivoAprendizagem(c, nc));
         }
     }
 
     public void setEC() {
         int i;
-        Conceito c;
+        Concept c;
         int nc;
         for (i=0; i < TAM; i++) {
-            c = new Conceito(i, "Conceito"+i);
+            c = new Concept(i, "Concept"+i);
             nc = -1; //"SEM CONHECIMENTO"
             EC.add(new EstadoCognitivo(c,nc));
         }

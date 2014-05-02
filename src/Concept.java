@@ -1,9 +1,9 @@
-public class Conceito
+public class Concept
 {
     private int id;
     private String nome;
 
-    Conceito (int id, String nome){
+    Concept (int id, String nome){
         this.id = id;
         this.nome = nome;
     }

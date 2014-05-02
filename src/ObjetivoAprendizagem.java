@@ -1,10 +1,10 @@
 public class ObjetivoAprendizagem
 {
-    private Conceito conceito;
+    private Concept concept;
     private int nc; //6 niveis cognitivos, de 0 a 5
 
-    ObjetivoAprendizagem(Conceito c, int nc){
-        this.conceito = c;
+    ObjetivoAprendizagem(Concept c, int nc){
+        this.concept = c;
         setNC(nc);
     }
 
@@ -19,12 +19,8 @@ public class ObjetivoAprendizagem
         return nc;
     }
 
-    public Conceito getConceito(){
-        return this.conceito;
-    }
-
     public String toString() {
-        Conceito c = this.getConceito();
+        Concept c = this.concept;
         return c.getId() + " - " + c.getNome() + "\n" + this.getNC();
     }
 }
