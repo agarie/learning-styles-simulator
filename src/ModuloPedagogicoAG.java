@@ -88,7 +88,7 @@ public class ModuloPedagogicoAG
 
     private static void mutation(CEA c, double mr){
         if (Math.random() <= mr) {
-            int p = Utilitario.RandomInt(4); //gera um int [0..3]
+            int p = (int) Math.floor(Math.random() * 4); // Gera um int in [0..3].
             if (c.get()[p] == 1)
                 c.get()[p] = 0;
             else c.get()[p] = 1;
@@ -104,7 +104,7 @@ public class ModuloPedagogicoAG
         for (int i = 0; i < POPSIZE; i+=2)
         {
             r = Math.random();
-            c = Utilitario.RandomInt(4);
+            c = (int) Math.floor(Math.random() * 4);
             ind1 = roulette();
             ind2 = roulette();
             if ( (r <= Pc) && (c > 0) ){

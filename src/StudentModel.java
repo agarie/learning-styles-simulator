@@ -49,7 +49,7 @@ public class StudentModel {
 
     public int getConceptNumber() {
         // Concepts de 0 a N-1.
-        return Utilitario.RandomInt(TAM);
+        return (int) Math.floor(Math.random() * TAM);
     }
 
     public LearningStyle getEA() {
@@ -57,7 +57,7 @@ public class StudentModel {
     }
 
     public CognitiveState getConcept() {
-        int i = Utilitario.RandomInt(TAM);
+        int i = (int) Math.floor(Math.random() * TAM);
         return this.EC.get(i);
     }
 
