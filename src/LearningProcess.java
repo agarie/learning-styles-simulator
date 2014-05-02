@@ -150,7 +150,7 @@ public class LearningProcess {
 
                 //SIMULAÇÃO DO ESTUDANTE - Calculo da performance pelo modulo de avaliacao
                 //=========================
-                PFM = ModuloAvaliacao.avaliar(cea, cea_r);
+                PFM = Evaluator.avaliar(cea, cea_r);
 
                 //Apresentar resultado de performance
                 System.out.println("Performance: "+PFM);
