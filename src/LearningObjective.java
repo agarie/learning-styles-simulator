@@ -1,9 +1,9 @@
-public class ObjetivoAprendizagem
+public class LearningObjective
 {
     private Concept concept;
     private int nc; //6 niveis cognitivos, de 0 a 5
 
-    ObjetivoAprendizagem(Concept c, int nc){
+    LearningObjective(Concept c, int nc){
         this.concept = c;
         setNC(nc);
     }

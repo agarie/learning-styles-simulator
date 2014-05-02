@@ -1,4 +1,4 @@
-public class CognitiveState extends ObjetivoAprendizagem
+public class CognitiveState extends LearningObjective
 {
     CognitiveState(Concept c, int nc){
         super(c,nc);

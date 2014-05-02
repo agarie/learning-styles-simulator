@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class StudentModel {
     // Alterado durante o processo de aprendizagem.
     private LearningStyle EA;
-    final private ArrayList<ObjetivoAprendizagem> OA = new ArrayList<ObjetivoAprendizagem>();
+    final private ArrayList<LearningObjective> OA = new ArrayList<LearningObjective>();
     final private ArrayList<CognitiveState> EC = new ArrayList<CognitiveState>();
 
     final private double MAX_DIFFERENCE = 0.9;
@@ -25,7 +25,7 @@ public class StudentModel {
         this.limit = lim;
     }
 
-    public ObjetivoAprendizagem getOA(int i) {
+    public LearningObjective getOA(int i) {
         if (i < TAM) {
             return OA.get(i);
         }
@@ -70,7 +70,7 @@ public class StudentModel {
         //or structure.
         for (i=0; i < TAM; i++) {
             c = new Concept(i, "Concept"+i);
-            OA.add(new ObjetivoAprendizagem(c, nc));
+            OA.add(new LearningObjective(c, nc));
         }
     }
 
