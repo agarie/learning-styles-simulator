@@ -11,7 +11,7 @@ public class LearningProcess {
      * lim = limite do reforço
      * c = quantidade de conceitos a serem aprendidos
      */
-    public static void executar(CEA cea_r, StudentModel ME, double m, String arquivo, byte idioma, byte abordagem)
+    public static void executar(LearningStylesCombination cea_r, StudentModel ME, double m, String arquivo, byte idioma, byte abordagem)
     {
 
         // LSC={(S,Vi,A,Seq), (S,Vi,A,G), (S,Vi,R,Seq), (S,Vi,R,G), (S,Ve,A,Seq), (S,Ve,A,G),
@@ -20,7 +20,7 @@ public class LearningProcess {
         if (abordagem == 1)
             ModuloPedagogicoAG.initLSC(); //inicializa populacao
 
-        CEA cea;    //cea selecionado estocasticament
+        LearningStylesCombination cea;    //cea selecionado estocasticament
 
         //=====================================================================
         //EXPERIMENTOS
@@ -143,7 +143,7 @@ public class LearningProcess {
                     cea =  ModuloPedagogico.gerarCEA(ME.getEA()); //CMK
                 }
 
-                //Apresentando CEA
+                //Apresentando LearningStylesCombination
 
                 int nc = ME.getEC(conceptNumber).getNC();
                 //System.out.println("Estudando conceito...Avaliando conceito...");
@@ -213,7 +213,7 @@ public class LearningProcess {
         ME.getEA().show();
         showDiff(ME.getEA());
         showResult(ME.getEA());
-        cea_r.show(); //CEA real do estudante
+        cea_r.show(); //LearningStylesCombination real do estudante
 
         System.out.println("Quantidade de PASSOS:  "+contPass);
         System.out.println("Quantidade de ATUALIZ.:"+contAtualiz);

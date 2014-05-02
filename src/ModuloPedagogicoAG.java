@@ -3,10 +3,10 @@ public class ModuloPedagogicoAG
     private static final int POPSIZE = 100;
     private static double[] pd = new double[POPSIZE]; //distrib. de probabilidades
     private static double[] ft = new double[POPSIZE]; //fitness de cada individuo
-    private static CEA[] lsc = new CEA[POPSIZE];      //populacao de individuos
+    private static LearningStylesCombination[] lsc = new LearningStylesCombination[POPSIZE];      //populacao de individuos
     private static double[] ac = new double[POPSIZE]; //accumulated probabilities (roleta)
 
-    public static CEA[] getlsc(){
+    public static LearningStylesCombination[] getlsc(){
         return lsc;
     }
 
@@ -55,22 +55,22 @@ public class ModuloPedagogicoAG
         double r;
         String crom;
 
-        lsc[0]  = new CEA("0000");
-        lsc[1]  = new CEA("1000");
-        lsc[2]  = new CEA("0100");
-        lsc[3]  = new CEA("0010");
-        lsc[4]  = new CEA("0001");
-        lsc[5]  = new CEA("1100");
-        lsc[6]  = new CEA("0110");
-        lsc[7]  = new CEA("0011");
-        lsc[8]  = new CEA("1010");
-        lsc[9]  = new CEA("1001");
-        lsc[10] = new CEA("0101");
-        lsc[11] = new CEA("1110");
-        lsc[12] = new CEA("0111");
-        lsc[13] = new CEA("1101");
-        lsc[14] = new CEA("1011");
-        lsc[15] = new CEA("1111");
+        lsc[0]  = new LearningStylesCombination("0000");
+        lsc[1]  = new LearningStylesCombination("1000");
+        lsc[2]  = new LearningStylesCombination("0100");
+        lsc[3]  = new LearningStylesCombination("0010");
+        lsc[4]  = new LearningStylesCombination("0001");
+        lsc[5]  = new LearningStylesCombination("1100");
+        lsc[6]  = new LearningStylesCombination("0110");
+        lsc[7]  = new LearningStylesCombination("0011");
+        lsc[8]  = new LearningStylesCombination("1010");
+        lsc[9]  = new LearningStylesCombination("1001");
+        lsc[10] = new LearningStylesCombination("0101");
+        lsc[11] = new LearningStylesCombination("1110");
+        lsc[12] = new LearningStylesCombination("0111");
+        lsc[13] = new LearningStylesCombination("1101");
+        lsc[14] = new LearningStylesCombination("1011");
+        lsc[15] = new LearningStylesCombination("1111");
 
         for (i = 16; i < POPSIZE; i++){
             crom = "";
@@ -81,12 +81,12 @@ public class ModuloPedagogicoAG
                 else
                     crom = crom + "1";
             }
-            lsc[i] = new CEA(crom);
+            lsc[i] = new LearningStylesCombination(crom);
         }
 
     }
 
-    private static void mutation(CEA c, double mr){
+    private static void mutation(LearningStylesCombination c, double mr){
         if (Math.random() <= mr) {
             int p = (int) Math.floor(Math.random() * 4); // Gera um int in [0..3].
             if (c.get()[p] == 1)
@@ -99,7 +99,7 @@ public class ModuloPedagogicoAG
         double r;
         int c; //ponto de cruzamento
         int ind1, ind2;
-        CEA[] lscNEW = new CEA[POPSIZE];  //nova populacao de individuos
+        LearningStylesCombination[] lscNEW = new LearningStylesCombination[POPSIZE];  //nova populacao de individuos
 
         for (int i = 0; i < POPSIZE; i+=2)
         {
@@ -108,8 +108,8 @@ public class ModuloPedagogicoAG
             ind1 = roulette();
             ind2 = roulette();
             if ( (r <= Pc) && (c > 0) ){
-                lscNEW[i] = new CEA();
-                lscNEW[i+1] = new CEA();
+                lscNEW[i] = new LearningStylesCombination();
+                lscNEW[i+1] = new LearningStylesCombination();
                 //copiar 1a. parte dos cromossosmos
                 for (int j=0; j<c; j++){
                     lscNEW[i].set(j, lsc[ind1].get()[j]);
@@ -134,7 +134,7 @@ public class ModuloPedagogicoAG
     public static void teste(){
         initLSC();
         LearningStyle EA = new LearningStyle();
-        CEA c;
+        LearningStylesCombination c;
         EA.set(0,0.70,0.30); //ativo-reflexivo
         EA.set(1,0.35,0.65); //sensitivo-intuitivo
         EA.set(2,0.60,0.40); //visual-verbal

@@ -1,10 +1,10 @@
 public class ModuloPedagogico {
     // Recebe os EA armazenados no StudentModel e infere a CEA atraves de
     // cadeias de markov
-    public static CEA gerarCEA(LearningStyle EA)
+    public static LearningStylesCombination gerarCEA(LearningStyle EA)
     {
         double x;
-        CEA cea = new CEA();
+        LearningStylesCombination cea = new LearningStylesCombination();
 
         // For each FSLSM dimension, randomly select if it's 0 or 1.
         for (int i = 0; i < 4; i++){
@@ -20,11 +20,11 @@ public class ModuloPedagogico {
         return cea;
     }
 
-    public static CEA gerarCEA(LearningStyle EA, int z)
+    public static LearningStylesCombination gerarCEA(LearningStyle EA, int z)
     {
         // Same as above, but only on dimension z.
         double x;
-        CEA cea = new CEA();
+        LearningStylesCombination cea = new LearningStylesCombination();
 
         for (int i = 0; i < 4; i++){
             if (i != z){

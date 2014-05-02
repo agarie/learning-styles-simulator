@@ -1,12 +1,15 @@
-public class CEA {
+/**
+ * Combination of Learning Styles.
+ */
+public class LearningStylesCombination {
     private int[] cea = new int[4]; //0 = ativo, 1 = reflexivo.
     private char[] ceaSt = new char[4]; //strength - F = forte / M = moderada / L = leve
 
-    public CEA() {
+    public LearningStylesCombination() {
         super();
     }
 
-    public CEA(String lsc)
+    public LearningStylesCombination(String lsc)
     {
         for (int i = 0; i < 4; i++) {
             this.cea[i] = Integer.parseInt(lsc.substring(i,i+1));
@@ -40,7 +43,7 @@ public class CEA {
     }
 
     // Strong Preference Not Satisfied ceaSt: F = forte, M = moderada, L = leve
-    public boolean spNotSatisfied(CEA cea) {
+    public boolean spNotSatisfied(LearningStylesCombination cea) {
         boolean result = false;
         for (int i = 0; i < 4; i++) {
             if ( (this.ceaSt[i] == 'F') && (this.cea[i] != cea.get()[i])  ) {
@@ -52,7 +55,7 @@ public class CEA {
     }
 
     // Moderate Preference Not Satisfied ceaSt: F = forte, M = moderada, L = leve
-    public boolean mpNotSatisfied(CEA cea) {
+    public boolean mpNotSatisfied(LearningStylesCombination cea) {
         boolean result = false;
         for (int i = 0; i < 4; i++) {
             if ( (this.ceaSt[i] == 'M') && (this.cea[i] != cea.get()[i])  ) {
@@ -63,7 +66,7 @@ public class CEA {
         return result;
     }
 
-    public int compare(CEA cea) {
+    public int compare(LearningStylesCombination cea) {
         int diff = 0;
         for (int i = 0; i < 4; i++) {
             if (this.cea[i] != cea.get()[i])

@@ -1,7 +1,7 @@
 public class Evaluator {
-    // cea = CEA gerada estocasticamente pelo ModuloPedagogico.
+    // cea = LearningStylesCombination gerada estocasticamente pelo ModuloPedagogico.
     // cea_real = preferencias reais do estudante
-    public static double avaliar(CEA cea, CEA cea_real){
+    public static double avaliar(LearningStylesCombination cea, LearningStylesCombination cea_real){
         //a probalidade da avaliacao ser ruim aumenta quando as diferencas entre os ceas aumentam
         //diff = difficulty factor -- varia de 0 a 5
         double diff = cea_real.compare(cea); //retorna a quantidade de diferencas entre a CEA selecionada e a CEA real do estudante

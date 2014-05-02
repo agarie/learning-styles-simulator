@@ -116,7 +116,7 @@ public class StudentModel {
         return Math.min(f, this.limit);
     }
 
-    public void updateEA_badEval(CEA cea, double performance) {
+    public void updateEA_badEval(LearningStylesCombination cea, double performance) {
         double reinforcement;
         //--distancia learning styles. quanto maior a distacia entre os estilos, menor e' o ajuste
         double DLS;
@@ -126,7 +126,7 @@ public class StudentModel {
             reinforcement = K * calcF(DLS,performance);
 
             // Aplicando reforço -- regras para atualizacao do EA.
-            // Se a CEA esta ativo e o desempenho foi ruim, entao ele nao e'
+            // Se a LearningStylesCombination esta ativo e o desempenho foi ruim, entao ele nao e'
             // tao ativo.
             if  (cea.get()[i] == 0) {
                 if ((reinforcement + this.EA.get()[i][1]) < MAX_DIFFERENCE) {
@@ -134,7 +134,7 @@ public class StudentModel {
                 }
             }
 
-            //se a CEA esta' reflexivo e o desempenho foi ruim, entao ele nao e' tao reflexivo
+            //se a LearningStylesCombination esta' reflexivo e o desempenho foi ruim, entao ele nao e' tao reflexivo
             if  (cea.get()[i] == 1) {
                 if ((reinforcement + this.EA.get()[i][0]) < MAX_DIFFERENCE) {
                     this.EA.set(i,this.EA.get()[i][0]+reinforcement, this.EA.get()[i][1]-reinforcement);
@@ -143,7 +143,7 @@ public class StudentModel {
         }
     }
 
-    public void updateEA_goodEval(CEA cea, double performance) {
+    public void updateEA_goodEval(LearningStylesCombination cea, double performance) {
         double reinforcement;
         //--distancia learning styles. quanto maior a distacia entre os estilos, menor e' o ajuste
         double DLS;
@@ -153,14 +153,14 @@ public class StudentModel {
             reinforcement = K*calcF(DLS,performance);
 
             //---------APLICANDO REFORCO-----------
-            //se CEA esta' ativo e ele teve um bom desempenho, entao realmente ele e' ativo
+            //se LearningStylesCombination esta' ativo e ele teve um bom desempenho, entao realmente ele e' ativo
             if (cea.get()[i] == 0) {
                 if ( (reinforcement + this.EA.get()[i][0] ) < MAX_DIFFERENCE ) {
                      this.EA.set(i,this.EA.get()[i][0]+reinforcement, this.EA.get()[i][1]-reinforcement);
                }
             }
 
-            //se o CEA esta' reflexivo e ele teve um bom desempenho, entao realmente ele e' reflexivo
+            //se o LearningStylesCombination esta' reflexivo e ele teve um bom desempenho, entao realmente ele e' reflexivo
             if (cea.get()[i] == 1) {
                 if ( (reinforcement + this.EA.get()[i][1] ) < MAX_DIFFERENCE ) {
                     this.EA.set(i,this.EA.get()[i][0]-reinforcement, this.EA.get()[i][1]+reinforcement);
@@ -175,8 +175,8 @@ public class StudentModel {
         }
     }
 
-    //compara e calcula as diferencas entre o ME e a CEA passada como parametro
-    public int compare(CEA cea) {
+    //compara e calcula as diferencas entre o ME e a LearningStylesCombination passada como parametro
+    public int compare(LearningStylesCombination cea) {
         int diff = 0;
         for (int i = 0; i < 4; i++) {
             if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (cea.get()[i] == 1) ) diff++;
@@ -185,7 +185,7 @@ public class StudentModel {
         return diff;
     }
 
-    public boolean spNotSatisfied(CEA cea) {
+    public boolean spNotSatisfied(LearningStylesCombination cea) {
         for (int i = 0; i < 4; i++) {
             if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (cea.get()[i] == 1) && (cea.getSt()[i] == 'F') ) {
                 return true;
@@ -197,7 +197,7 @@ public class StudentModel {
         return false;
     }
 
-    public boolean mpNotSatisfied(CEA cea) {
+    public boolean mpNotSatisfied(LearningStylesCombination cea) {
         for (int i = 0; i < 4; i++) {
             if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (cea.get()[i] == 1) && (cea.getSt()[i] == 'M') ) {
                 return true;
