@@ -559,7 +559,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         byte abordagem = 0;
         if (ag.isSelected()) abordagem = 1;
 
-        ProcessoAprendizagem.executar(cea_r, ME, Double.parseDouble(m.getText()), arquivo.getText(), idioma, abordagem);
+        LearningProcess.executar(cea_r, ME, Double.parseDouble(m.getText()), arquivo.getText(), idioma, abordagem);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 

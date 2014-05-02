@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 import org.jfree.data.xy.XYSeries;
 
-public class ProcessoAprendizagem{
+public class LearningProcess {
     //==================================================================
     /*tx = taxa de aprendizagem
      * m = pfm minimo para inferencia de problemas de aprendizagem
