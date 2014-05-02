@@ -12,17 +12,20 @@ public class EstiloAprendizagem
         this.d[e][1] = e1;
     }
 
-    public void show(){
-        System.out.println("Ativo: "+this.d[0][0]);
-        System.out.println("Reflexivo: "+this.d[0][1]);
-        System.out.println("Sensitivo: "+this.d[1][0]);
-        System.out.println("Intuitivo: "+this.d[1][1]);
-        System.out.println("Visual: "+this.d[2][0]);
-        System.out.println("Verbal: "+this.d[2][1]);
-        System.out.println("Sequencial: "+this.d[3][0]);
-        System.out.println("Global: "+this.d[3][1]);
+    public void show() {
+        System.out.println(this.toString());
         System.out.println("----------------------------");
     }
 
+    public String toString() {
+        String output = "";
+
+        for (int i = 0; i < 4; i++) {
+            output = output + this.d[i][0] + "\n";
+            output = output + this.d[i][1] + "\n";
+        }
+
+        return output;
+    }
 }
 

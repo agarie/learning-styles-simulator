@@ -72,34 +72,41 @@ public class CEA {
         return diff;
     }
 
-    public void show()
-    {
+    public void show() {
+        System.out.println(this.toString());
+    }
+
+    public String toString() {
+        String output = "";
+
         if (cea[0] == 0) {
-            System.out.println("Ativo");
+            output = output + "Ativo\n";
         }
         else {
-            System.out.println("Reflexivo");
+            output = output + "Reflexivo\n";
         }
 
         if (cea[1] == 0) {
-            System.out.println("Sensitivo");
+            output = output + "Sensitivo\n";
         }
         else {
-            System.out.println("Intuitivo");
+            output = output + "Intuitivo\n";
         }
 
         if (cea[2] == 0) {
-            System.out.println("Visual");
+            output = output + "Visual\n";
         }
         else {
-            System.out.println("Verbal");
+            output = output + "Verbal\n";
         }
 
         if (cea[3] == 0) {
-            System.out.println("Sequencial");
+            output = output + "Sequencial\n";
         }
         else {
-            System.out.println("Global");
+            output = output + "Global\n";
         }
+
+        return output;
     }
 }

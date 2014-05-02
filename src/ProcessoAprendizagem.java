@@ -124,7 +124,6 @@ public class ProcessoAprendizagem{
             //if (count == 10) break;
 
             //apresentar ME
-            //ME.getEA().show();
 
             //selecionar conceito a ser aprendido
             int conceptNumber = ME.getConceptNumber();
@@ -145,7 +144,6 @@ public class ProcessoAprendizagem{
                 }
 
                 //Apresentando CEA
-                //cea.show();
 
                 int nc = ME.getEC(conceptNumber).getNC();
                 //System.out.println("Estudando conceito...Avaliando conceito...");
@@ -172,8 +170,6 @@ public class ProcessoAprendizagem{
                 //salvar novo nivel cognitivo neste conceito
                 //System.out.println("Atualizando EC...");
                 ME.setEC(conceptNumber,nc);
-                //ME.showEC();
-                //ME.getEA().show();
                 contPass++; //contador de passos do processo de aprendizagem
                 series1.add(contPass, ME.getEA().get()[0][0]*100);
                 series2.add(contPass, ME.getEA().get()[0][1]*100);
@@ -214,7 +210,6 @@ public class ProcessoAprendizagem{
         }//while
         long delay = System.currentTimeMillis() - start;
 
-        //        ME.showEC();
         ME.getEA().show();
         showDiff(ME.getEA());
         showResult(ME.getEA());

@@ -22,4 +22,9 @@ public class ObjetivoAprendizagem
     public Conceito getConceito(){
         return this.conceito;
     }
+
+    public String toString() {
+        Conceito c = this.getConceito();
+        return c.getId() + " - " + c.getNome() + "\n" + this.getNC();
+    }
 }

@@ -21,7 +21,6 @@ public class ModeloEstudante {
         //d3; //0 = visual, 1 = verbal.
         //d4; //0 = sequencial, 1 = global.
         this.LIM = lim;
-
     }
 
     public ObjetivoAprendizagem getOA(int i) {
@@ -202,9 +201,8 @@ public class ModeloEstudante {
     }
 
     public void showEC(){
-        for (EstadoCognitivo ec : EC){
-            System.out.println(ec.getConceito().getId()+" - "+ec.getConceito().getNome());
-            System.out.println(ec.getNC());
+        for (EstadoCognitivo ec : EC) {
+            System.out.println(ec.toString());
         }
     }
 
