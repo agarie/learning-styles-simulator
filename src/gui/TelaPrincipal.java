@@ -505,7 +505,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_MEativoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        EstiloAprendizagem EA = new EstiloAprendizagem();
+        LearningStyle EA = new LearningStyle();
         CEA cea_r = new CEA();
 
         //inicializar estilos de aprendizagem no ME

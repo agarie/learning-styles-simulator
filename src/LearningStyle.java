@@ -1,5 +1,4 @@
-public class EstiloAprendizagem
-{
+public class LearningStyle {
     private double[][] d = new double[4][2]; //posicao 0=ativo / 1=reflexivo
 
     public double[][] get(){

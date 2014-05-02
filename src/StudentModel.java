@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class StudentModel {
     // Alterado durante o processo de aprendizagem.
-    private EstiloAprendizagem EA;
+    private LearningStyle EA;
     final private ArrayList<ObjetivoAprendizagem> OA = new ArrayList<ObjetivoAprendizagem>();
     final private ArrayList<CognitiveState> EC = new ArrayList<CognitiveState>();
 
@@ -17,7 +17,7 @@ public class StudentModel {
     final private double K; // Taxa de aprendizagem
     final private double limit;
 
-    public StudentModel(EstiloAprendizagem ea, int t, double k, double lim) {
+    public StudentModel(LearningStyle ea, int t, double k, double lim) {
         // Usual values for (t, k, lim) = (60, 0.5, 0.05).
         this.EA = ea;
         this.TAM = t;
@@ -52,7 +52,7 @@ public class StudentModel {
         return Utilitario.RandomInt(TAM);
     }
 
-    public EstiloAprendizagem getEA() {
+    public LearningStyle getEA() {
         return this.EA;
     }
 

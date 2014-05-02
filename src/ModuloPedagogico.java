@@ -1,7 +1,7 @@
 public class ModuloPedagogico {
     // Recebe os EA armazenados no StudentModel e infere a CEA atraves de
     // cadeias de markov
-    public static CEA gerarCEA(EstiloAprendizagem EA)
+    public static CEA gerarCEA(LearningStyle EA)
     {
         double x;
         CEA cea = new CEA();
@@ -20,7 +20,7 @@ public class ModuloPedagogico {
         return cea;
     }
 
-    public static CEA gerarCEA(EstiloAprendizagem EA, int z)
+    public static CEA gerarCEA(LearningStyle EA, int z)
     {
         // Same as above, but only on dimension z.
         double x;

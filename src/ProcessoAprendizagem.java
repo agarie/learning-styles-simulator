@@ -272,7 +272,7 @@ public class ProcessoAprendizagem{
     }
 
 
-    private static void showDiff(EstiloAprendizagem EA){
+    private static void showDiff(LearningStyle EA){
         System.out.println( (EA.get()[0][0] - EA.get()[0][1]) );
         System.out.println( (EA.get()[1][0] - EA.get()[1][1]) );
         System.out.println( (EA.get()[2][0] - EA.get()[2][1]) );
@@ -280,7 +280,7 @@ public class ProcessoAprendizagem{
 
     }
 
-    private static void showResult(EstiloAprendizagem EA){
+    private static void showResult(LearningStyle EA){
         DecimalFormat aproximador = new DecimalFormat("0.0");
         System.out.println("{("+aproximador.format(EA.get()[0][0])+";"+aproximador.format(EA.get()[0][1])+"); ("+
                 aproximador.format(EA.get()[1][0])+";"+aproximador.format(EA.get()[1][1])+"); ("+

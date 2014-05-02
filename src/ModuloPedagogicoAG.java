@@ -17,7 +17,7 @@ public class ModuloPedagogicoAG
         return sum;
     }
     //calcula fitness
-    public static void calcFT(EstiloAprendizagem EA){
+    public static void calcFT(LearningStyle EA){
         for (int i=0; i <POPSIZE; i++){
             ft[i] = 1;
             for (int j = 0; j < 4 ; j++){
@@ -133,7 +133,7 @@ public class ModuloPedagogicoAG
 
     public static void teste(){
         initLSC();
-        EstiloAprendizagem EA = new EstiloAprendizagem();
+        LearningStyle EA = new LearningStyle();
         CEA c;
         EA.set(0,0.70,0.30); //ativo-reflexivo
         EA.set(1,0.35,0.65); //sensitivo-intuitivo
