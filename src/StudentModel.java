@@ -10,7 +10,7 @@ public class StudentModel {
     // Alterado durante o processo de aprendizagem.
     private EstiloAprendizagem EA;
     final private ArrayList<ObjetivoAprendizagem> OA = new ArrayList<ObjetivoAprendizagem>();
-    final private ArrayList<EstadoCognitivo> EC = new ArrayList<EstadoCognitivo>();
+    final private ArrayList<CognitiveState> EC = new ArrayList<CognitiveState>();
 
     final private double MAX_DIFFERENCE = 0.9;
     final private int TAM; // Quantidade de conceitos a serem aprendidos.
@@ -34,7 +34,7 @@ public class StudentModel {
         }
     }
 
-    public EstadoCognitivo getEC(int i) {
+    public CognitiveState getEC(int i) {
         if (i < TAM) {
             return EC.get(i);
         }
@@ -56,7 +56,7 @@ public class StudentModel {
         return this.EA;
     }
 
-    public EstadoCognitivo getConcept() {
+    public CognitiveState getConcept() {
         int i = Utilitario.RandomInt(TAM);
         return this.EC.get(i);
     }
@@ -81,7 +81,7 @@ public class StudentModel {
         for (i=0; i < TAM; i++) {
             c = new Concept(i, "Concept"+i);
             nc = -1; //"SEM CONHECIMENTO"
-            EC.add(new EstadoCognitivo(c,nc));
+            EC.add(new CognitiveState(c,nc));
         }
     }
 
@@ -170,7 +170,7 @@ public class StudentModel {
     }
 
     public void showEC() {
-        for (EstadoCognitivo ec : EC) {
+        for (CognitiveState ec : EC) {
             System.out.println(ec.toString());
         }
     }
