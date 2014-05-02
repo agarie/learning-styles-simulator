@@ -1,5 +1,5 @@
 public class ModuloPedagogico {
-    // Recebe os EA armazenados no ModeloEstudante e infere a CEA atraves de
+    // Recebe os EA armazenados no StudentModel e infere a CEA atraves de
     // cadeias de markov
     public static CEA gerarCEA(EstiloAprendizagem EA)
     {

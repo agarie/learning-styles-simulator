@@ -11,7 +11,7 @@ public class ProcessoAprendizagem{
      * lim = limite do reforço
      * c = quantidade de conceitos a serem aprendidos
      */
-    public static void executar(CEA cea_r, ModeloEstudante ME, double m, String arquivo, byte idioma, byte abordagem)
+    public static void executar(CEA cea_r, StudentModel ME, double m, String arquivo, byte idioma, byte abordagem)
     {
 
         // LSC={(S,Vi,A,Seq), (S,Vi,A,G), (S,Vi,R,Seq), (S,Vi,R,G), (S,Ve,A,Seq), (S,Ve,A,G),

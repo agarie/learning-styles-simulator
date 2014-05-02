@@ -506,7 +506,7 @@ public class TelaPrincipalEmIngles extends javax.swing.JFrame {
 
         cea_r.set(d1, d2, d3, d4);   //Experimento 1
 
-        ModeloEstudante ME = new ModeloEstudante(EA, Integer.parseInt(tam.getText()),
+        StudentModel ME = new StudentModel(EA, Integer.parseInt(tam.getText()),
                 Double.parseDouble(k.getText()), Double.parseDouble(lim.getText()));
 
         //inicializar objetivos de aprendizagem do estudante

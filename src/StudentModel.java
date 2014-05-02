@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * This model uses Felder-Silverman's learning styles to represent the preferences
  * of a given student.
  */
-public class ModeloEstudante {
+public class StudentModel {
     // Alterado durante o processo de aprendizagem.
     private EstiloAprendizagem EA;
     final private ArrayList<ObjetivoAprendizagem> OA = new ArrayList<ObjetivoAprendizagem>();
@@ -17,7 +17,7 @@ public class ModeloEstudante {
     final private double K; // Taxa de aprendizagem
     final private double limit;
 
-    public ModeloEstudante(EstiloAprendizagem ea, int t, double k, double lim) {
+    public StudentModel(EstiloAprendizagem ea, int t, double k, double lim) {
         // Usual values for (t, k, lim) = (60, 0.5, 0.05).
         this.EA = ea;
         this.TAM = t;
@@ -104,7 +104,7 @@ public class ModeloEstudante {
      */
     public boolean conceitoSatisfeito(int i) {
         if (OA.get(i).getNC() > EC.get(i).getNC()) {
-            return false
+            return false;
         }
         return true;
     }
