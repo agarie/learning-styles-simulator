@@ -137,10 +137,10 @@ public class LearningProcess {
                     ModuloPedagogicoAG.calcFT(ME.getEA());
                     ModuloPedagogicoAG.calcPD();
                     ModuloPedagogicoAG.calcAC();
-                    lsc = ModuloPedagogicoAG.getlsc()[ModuloPedagogicoAG.roulette()];
+                    lsc = ModuloPedagogicoAG.getLSC()[ModuloPedagogicoAG.roulette()];
                 }
                 else { //MARKOV
-                    lsc =  ModuloPedagogico.gerarCEA(ME.getEA()); //CMK
+                    lsc =  ModuloPedagogico.getLSC(ME.getEA()); //CMK
                 }
 
                 //Apresentando LearningStylesCombination

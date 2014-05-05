@@ -1,12 +1,11 @@
-public class ModuloPedagogicoAG
-{
+public class ModuloPedagogicoAG {
     private static final int POPSIZE = 100;
     private static double[] pd = new double[POPSIZE]; //distrib. de probabilidades
     private static double[] ft = new double[POPSIZE]; //fitness de cada individuo
     private static LearningStylesCombination[] lsc = new LearningStylesCombination[POPSIZE];      //populacao de individuos
     private static double[] ac = new double[POPSIZE]; //accumulated probabilities (roleta)
 
-    public static LearningStylesCombination[] getlsc(){
+    public static LearningStylesCombination[] getLSC(){
         return lsc;
     }
 
