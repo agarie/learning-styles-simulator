@@ -116,7 +116,7 @@ public class StudentModel {
         return Math.min(f, this.limit);
     }
 
-    public void updateEA_badEval(LearningStylesCombination cea, double performance) {
+    public void updateEA_badEval(LearningStylesCombination lsc, double performance) {
         double reinforcement;
         //--distancia learning styles. quanto maior a distacia entre os estilos, menor e' o ajuste
         double DLS;
@@ -128,14 +128,14 @@ public class StudentModel {
             // Aplicando reforço -- regras para atualizacao do EA.
             // Se a LearningStylesCombination esta ativo e o desempenho foi ruim, entao ele nao e'
             // tao ativo.
-            if  (cea.get()[i] == 0) {
+            if  (lsc.get()[i] == 0) {
                 if ((reinforcement + this.EA.get()[i][1]) < MAX_DIFFERENCE) {
                     this.EA.set(i,this.EA.get()[i][0]-reinforcement, this.EA.get()[i][1]+reinforcement);
                 }
             }
 
             //se a LearningStylesCombination esta' reflexivo e o desempenho foi ruim, entao ele nao e' tao reflexivo
-            if  (cea.get()[i] == 1) {
+            if  (lsc.get()[i] == 1) {
                 if ((reinforcement + this.EA.get()[i][0]) < MAX_DIFFERENCE) {
                     this.EA.set(i,this.EA.get()[i][0]+reinforcement, this.EA.get()[i][1]-reinforcement);
                 }
@@ -143,7 +143,7 @@ public class StudentModel {
         }
     }
 
-    public void updateEA_goodEval(LearningStylesCombination cea, double performance) {
+    public void updateEA_goodEval(LearningStylesCombination lsc, double performance) {
         double reinforcement;
         //--distancia learning styles. quanto maior a distacia entre os estilos, menor e' o ajuste
         double DLS;
@@ -154,14 +154,14 @@ public class StudentModel {
 
             //---------APLICANDO REFORCO-----------
             //se LearningStylesCombination esta' ativo e ele teve um bom desempenho, entao realmente ele e' ativo
-            if (cea.get()[i] == 0) {
+            if (lsc.get()[i] == 0) {
                 if ( (reinforcement + this.EA.get()[i][0] ) < MAX_DIFFERENCE ) {
                      this.EA.set(i,this.EA.get()[i][0]+reinforcement, this.EA.get()[i][1]-reinforcement);
                }
             }
 
             //se o LearningStylesCombination esta' reflexivo e ele teve um bom desempenho, entao realmente ele e' reflexivo
-            if (cea.get()[i] == 1) {
+            if (lsc.get()[i] == 1) {
                 if ( (reinforcement + this.EA.get()[i][1] ) < MAX_DIFFERENCE ) {
                     this.EA.set(i,this.EA.get()[i][0]-reinforcement, this.EA.get()[i][1]+reinforcement);
                 }
@@ -176,33 +176,33 @@ public class StudentModel {
     }
 
     //compara e calcula as diferencas entre o ME e a LearningStylesCombination passada como parametro
-    public int compare(LearningStylesCombination cea) {
+    public int compare(LearningStylesCombination lsc) {
         int diff = 0;
         for (int i = 0; i < 4; i++) {
-            if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (cea.get()[i] == 1) ) diff++;
-            if ( (this.EA.get()[i][0] < this.EA.get()[i][1]) && (cea.get()[i] == 0) ) diff++;
+            if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (lsc.get()[i] == 1) ) diff++;
+            if ( (this.EA.get()[i][0] < this.EA.get()[i][1]) && (lsc.get()[i] == 0) ) diff++;
         }
         return diff;
     }
 
-    public boolean spNotSatisfied(LearningStylesCombination cea) {
+    public boolean spNotSatisfied(LearningStylesCombination lsc) {
         for (int i = 0; i < 4; i++) {
-            if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (cea.get()[i] == 1) && (cea.getSt()[i] == 'F') ) {
+            if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (lsc.get()[i] == 1) && (lsc.getSt()[i] == 'F') ) {
                 return true;
             }
-            if ( (this.EA.get()[i][0] < this.EA.get()[i][1]) && (cea.get()[i] == 0) && (cea.getSt()[i] == 'F') ) {
+            if ( (this.EA.get()[i][0] < this.EA.get()[i][1]) && (lsc.get()[i] == 0) && (lsc.getSt()[i] == 'F') ) {
                 return true;
             }
         }
         return false;
     }
 
-    public boolean mpNotSatisfied(LearningStylesCombination cea) {
+    public boolean mpNotSatisfied(LearningStylesCombination lsc) {
         for (int i = 0; i < 4; i++) {
-            if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (cea.get()[i] == 1) && (cea.getSt()[i] == 'M') ) {
+            if ( (this.EA.get()[i][0] > this.EA.get()[i][1]) && (lsc.get()[i] == 1) && (lsc.getSt()[i] == 'M') ) {
                 return true;
             }
-            if ( (this.EA.get()[i][0] < this.EA.get()[i][1]) && (cea.get()[i] == 0) && (cea.getSt()[i] == 'M') ) {
+            if ( (this.EA.get()[i][0] < this.EA.get()[i][1]) && (lsc.get()[i] == 0) && (lsc.getSt()[i] == 'M') ) {
                 return true;
             }
         }

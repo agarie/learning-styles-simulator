@@ -11,7 +11,7 @@ public class LearningProcess {
      * lim = limite do reforço
      * c = quantidade de conceitos a serem aprendidos
      */
-    public static void executar(LearningStylesCombination cea_r, StudentModel ME, double m, String arquivo, byte idioma, byte abordagem)
+    public static void executar(LearningStylesCombination lsc_r, StudentModel ME, double m, String arquivo, byte idioma, byte abordagem)
     {
 
         // LSC={(S,Vi,A,Seq), (S,Vi,A,G), (S,Vi,R,Seq), (S,Vi,R,G), (S,Ve,A,Seq), (S,Ve,A,G),
@@ -20,28 +20,28 @@ public class LearningProcess {
         if (abordagem == 1)
             ModuloPedagogicoAG.initLSC(); //inicializa populacao
 
-        LearningStylesCombination cea;    //cea selecionado estocasticament
+        LearningStylesCombination lsc;    //lsc selecionado estocasticament
 
         //=====================================================================
         //EXPERIMENTOS
         //SRLS = \{reflective (strong), sensitive (strong), visual (moderate), global (weak) \}
-        //cea real do estudante. dita o comportamento do estudante frente ao processo de avaliacao, o que tem impacto na atualizacao do EA
-        //cea_r.set(0,0,0,0); //Experimento 1
-        //cea_r.set(1,0,0,0); //Experimento 2
-        //cea_r.set(0,1,0,0); //Experimento 3
-        //cea_r.set(0,0,1,0); //Experimento 4
-        //cea_r.set(0,0,0,1); //Experimento 5
-        //cea_r.set(1,1,0,0); //Experimento 6
-        //cea_r.set(0,1,1,0); //Experimento 7
-        //cea_r.set(0,0,1,1); //Experimento 8
-        //cea_r.set(1,0,1,0); //Experimento 9
-        //cea_r.set(1,0,0,1); //Experimento 10
-        //cea_r.set(0,1,0,1); //Experimento 11
-        //cea_r.set(1,1,1,0); //Experimento 12
-        //cea_r.set(0,1,1,1); //Experimento 13
-        //cea_r.set(1,1,0,1); //Experimento 14
-        //cea_r.set(1,0,1,1); //Experimento 15
-        //cea_r.set(1,1,1,1); //Experimento 16
+        //lsc real do estudante. dita o comportamento do estudante frente ao processo de avaliacao, o que tem impacto na atualizacao do EA
+        //lsc_r.set(0,0,0,0); //Experimento 1
+        //lsc_r.set(1,0,0,0); //Experimento 2
+        //lsc_r.set(0,1,0,0); //Experimento 3
+        //lsc_r.set(0,0,1,0); //Experimento 4
+        //lsc_r.set(0,0,0,1); //Experimento 5
+        //lsc_r.set(1,1,0,0); //Experimento 6
+        //lsc_r.set(0,1,1,0); //Experimento 7
+        //lsc_r.set(0,0,1,1); //Experimento 8
+        //lsc_r.set(1,0,1,0); //Experimento 9
+        //lsc_r.set(1,0,0,1); //Experimento 10
+        //lsc_r.set(0,1,0,1); //Experimento 11
+        //lsc_r.set(1,1,1,0); //Experimento 12
+        //lsc_r.set(0,1,1,1); //Experimento 13
+        //lsc_r.set(1,1,0,1); //Experimento 14
+        //lsc_r.set(1,0,1,1); //Experimento 15
+        //lsc_r.set(1,1,1,1); //Experimento 16
 
         //===============================================================================
 
@@ -137,10 +137,10 @@ public class LearningProcess {
                     ModuloPedagogicoAG.calcFT(ME.getEA());
                     ModuloPedagogicoAG.calcPD();
                     ModuloPedagogicoAG.calcAC();
-                    cea = ModuloPedagogicoAG.getlsc()[ModuloPedagogicoAG.roulette()];
+                    lsc = ModuloPedagogicoAG.getlsc()[ModuloPedagogicoAG.roulette()];
                 }
                 else { //MARKOV
-                    cea =  ModuloPedagogico.gerarCEA(ME.getEA()); //CMK
+                    lsc =  ModuloPedagogico.gerarCEA(ME.getEA()); //CMK
                 }
 
                 //Apresentando LearningStylesCombination
@@ -150,21 +150,21 @@ public class LearningProcess {
 
                 //SIMULAÇÃO DO ESTUDANTE - Calculo da performance pelo modulo de avaliacao
                 //=========================
-                PFM = Evaluator.avaliar(cea, cea_r);
+                PFM = Evaluator.avaliar(lsc, lsc_r);
 
                 //Apresentar resultado de performance
                 System.out.println("Performance: "+PFM);
 
                 if (PFM < m)
                 {
-                    ME.updateEA_badEval(cea,PFM);
+                    ME.updateEA_badEval(lsc,PFM);
                     contAtualiz++; //quantidade de vezes que o EA sofre alteracao
                     lpCount++;
                 }
                 else
                 {
                     nc++;
-                    //ME.updateEA_goodEval(cea,PFM);
+                    //ME.updateEA_goodEval(lsc,PFM);
                 }
 
                 //salvar novo nivel cognitivo neste conceito
@@ -213,7 +213,7 @@ public class LearningProcess {
         ME.getEA().show();
         showDiff(ME.getEA());
         showResult(ME.getEA());
-        cea_r.show(); //LearningStylesCombination real do estudante
+        lsc_r.show(); //LearningStylesCombination real do estudante
 
         System.out.println("Quantidade de PASSOS:  "+contPass);
         System.out.println("Quantidade de ATUALIZ.:"+contAtualiz);

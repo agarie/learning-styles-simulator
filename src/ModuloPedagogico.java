@@ -4,43 +4,43 @@ public class ModuloPedagogico {
     public static LearningStylesCombination gerarCEA(LearningStyle EA)
     {
         double x;
-        LearningStylesCombination cea = new LearningStylesCombination();
+        LearningStylesCombination lsc = new LearningStylesCombination();
 
         // For each FSLSM dimension, randomly select if it's 0 or 1.
         for (int i = 0; i < 4; i++){
             x = Math.random();
             if ( (EA.get()[i][0] - x) >= 0) {
-                cea.get()[i] = 0;
+                lsc.get()[i] = 0;
             }
             else {
-                cea.get()[i] = 1;
+                lsc.get()[i] = 1;
             }
         }
 
-        return cea;
+        return lsc;
     }
 
     public static LearningStylesCombination gerarCEA(LearningStyle EA, int z)
     {
         // Same as above, but only on dimension z.
         double x;
-        LearningStylesCombination cea = new LearningStylesCombination();
+        LearningStylesCombination lsc = new LearningStylesCombination();
 
         for (int i = 0; i < 4; i++){
             if (i != z){
                 if (EA.get()[i][0] >= EA.get()[i][1])
-                    cea.get()[i] = 0;
+                    lsc.get()[i] = 0;
                 else
-                    cea.get()[i] = 1;
+                    lsc.get()[i] = 1;
             }
             else {
                 x = Math.random();
                 if ( (EA.get()[i][0] - x) >= 0)
-                    cea.get()[i] = 0;
+                    lsc.get()[i] = 0;
                 else
-                    cea.get()[i] = 1;
+                    lsc.get()[i] = 1;
             }
         }
-        return cea;
+        return lsc;
     }
 }

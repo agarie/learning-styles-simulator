@@ -1,12 +1,12 @@
 public class Evaluator {
-    // cea = LearningStylesCombination gerada estocasticamente pelo ModuloPedagogico.
-    // cea_real = preferencias reais do estudante
-    public static double avaliar(LearningStylesCombination cea, LearningStylesCombination cea_real){
+    // lsc = LearningStylesCombination gerada estocasticamente pelo ModuloPedagogico.
+    // lsc_real = preferencias reais do estudante
+    public static double avaliar(LearningStylesCombination lsc, LearningStylesCombination lsc_real){
         //a probalidade da avaliacao ser ruim aumenta quando as diferencas entre os ceas aumentam
         //diff = difficulty factor -- varia de 0 a 5
-        double diff = cea_real.compare(cea); //retorna a quantidade de diferencas entre a CEA selecionada e a CEA real do estudante
-        boolean sp = cea_real.spNotSatisfied(cea); //strong preference not satisfied
-        boolean mp = cea_real.mpNotSatisfied(cea); //moderate preference not satisfied
+        double diff = lsc_real.compare(lsc); //retorna a quantidade de diferencas entre a CEA selecionada e a CEA real do estudante
+        boolean sp = lsc_real.spNotSatisfied(lsc); //strong preference not satisfied
+        boolean mp = lsc_real.mpNotSatisfied(lsc); //moderate preference not satisfied
         double beta = 0, gamma = 0;
 
         if (sp) {

@@ -461,7 +461,7 @@ public class TelaPrincipalEmIngles extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         LearningStyle EA = new LearningStyle();
-        LearningStylesCombination cea_r = new LearningStylesCombination();
+        LearningStylesCombination lsc_r = new LearningStylesCombination();
 
         //inicializar estilos de aprendizagem no ME
         double ativo = Double.parseDouble(MEativo.getText());
@@ -478,13 +478,13 @@ public class TelaPrincipalEmIngles extends javax.swing.JFrame {
         EA.set(2, visual, verbal); //(0)visual-(1)verbal
         EA.set(3, sequencial, global); //(0)sequencial-(1)global
 
-        //configurar CEA real do estudante
+        //configurar lsc real do estudante
         String f1 = (String) forca1.getSelectedItem();
         String f2 = (String) forca2.getSelectedItem();
         String f3 = (String) forca3.getSelectedItem();
         String f4 = (String) forca4.getSelectedItem();
 
-        cea_r.setStrength(f1.charAt(0), f2.charAt(0), f3.charAt(0), f4.charAt(0));  //F = forte; M = moderada; L = leve
+        lsc_r.setStrength(f1.charAt(0), f2.charAt(0), f3.charAt(0), f4.charAt(0));  //F = forte; M = moderada; L = leve
 
         int d1 = 0;
         int d2 = 0;
@@ -504,7 +504,7 @@ public class TelaPrincipalEmIngles extends javax.swing.JFrame {
             d4 = 1;
         }
 
-        cea_r.set(d1, d2, d3, d4);   //Experimento 1
+        lsc_r.set(d1, d2, d3, d4);   //Experimento 1
 
         StudentModel ME = new StudentModel(EA, Integer.parseInt(tam.getText()),
                 Double.parseDouble(k.getText()), Double.parseDouble(lim.getText()));
@@ -527,7 +527,7 @@ public class TelaPrincipalEmIngles extends javax.swing.JFrame {
             abordagem = 1;
         }
 
-        LearningProcess.executar(cea_r, ME, Double.parseDouble(m.getText()), arquivo.getText(), idioma, abordagem);
+        LearningProcess.executar(lsc_r, ME, Double.parseDouble(m.getText()), arquivo.getText(), idioma, abordagem);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
