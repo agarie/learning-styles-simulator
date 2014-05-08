@@ -3,8 +3,8 @@ This project is the simulator used in the paper by [Dr. Fabiano Dorça](http://w
 *[A new approach to discover students learning styles in adaptive educational systems](http://www.br-ie.org/pub/index.php/rbie/article/download/1434/2121)*
 
 This project provides a simulator for the evaluation of learning styles
-strategies. At the moment, it implements only two: markov models and genetic
-algorithms.
+strategies. At the moment, it implements only two of them: markov models and
+genetic algorithms.
 
 I'm currently refactoring the code, so everything should be counted as Dr.
 Fabiano and his team's code, not mine.
@@ -23,7 +23,7 @@ stay in place for some time.
 ## Usage
 
 Working on it. It'll probably be some Simulator class that you can instantiate,
-configure and run -- I'm still unsure about how to return the simulated values.
+configure and run. Ideally, this would output some CSV with the simulated data.
 
 ## Contributing
 
