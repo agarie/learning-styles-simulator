@@ -11,18 +11,13 @@ public class LearningProcess {
      * lim = limite do reforço
      * c = quantidade de conceitos a serem aprendidos
      */
-    public static void executar(LearningStylesCombination lsc_r, StudentModel ME, double m, String arquivo, byte idioma, byte abordagem)
-    {
+    public static void executar(LearningStylesCombination lsc_r, StudentModel ME, double m, String arquivo, byte idioma, byte abordagem) {
 
-        // LSC={(S,Vi,A,Seq), (S,Vi,A,G), (S,Vi,R,Seq), (S,Vi,R,G), (S,Ve,A,Seq), (S,Ve,A,G),
-        //     (S,Ve,R,Seq), (S,Ve,R,G),(I,Vi,A,Seq), (I,Vi,A,G), (I,Vi,R,Seq), (I,Vi,R,G), (I,Ve,A,Seq),
-        //     (I,Ve,A,G), (I,Ve,R,Seq), (I,Ve,R,G)}.
         if (abordagem == 1)
             ModuloPedagogicoAG.initLSC(); //inicializa populacao
 
         LearningStylesCombination lsc;    //lsc selecionado estocasticament
 
-        //=====================================================================
         //EXPERIMENTOS
         //SRLS = \{reflective (strong), sensitive (strong), visual (moderate), global (weak) \}
         //lsc real do estudante. dita o comportamento do estudante frente ao processo de avaliacao, o que tem impacto na atualizacao do EA
@@ -42,8 +37,6 @@ public class LearningProcess {
         //lsc_r.set(1,1,0,1); //Experimento 14
         //lsc_r.set(1,0,1,1); //Experimento 15
         //lsc_r.set(1,1,1,1); //Experimento 16
-
-        //===============================================================================
 
 
         //enquanto o objetivo de aprendizagem nao estiver satisfeito
